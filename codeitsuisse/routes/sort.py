@@ -12,8 +12,14 @@ def evaluatesort():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
     inputValue = data.get("input")
-    inputValue.sort()
-    result = inputValue
+    n = 20001
+    save = [0] * n
+    result = []
+    for i in inputValue:
+        save[i+10000]+=1
+    for i in range(n):
+        t = i - 10000
+        result += [t] * save[i]
     logging.info("My result :{}".format(result))
     return json.dumps(result)
 
