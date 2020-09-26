@@ -25,7 +25,9 @@ def evaluatefruit():
     #print(c)
     #result = ta*a + tb*b + tc*c
     #logging.info("My result :{}".format(result))
-    return jsonify(ast.literal_eval("0"))
+    guess = 0
+    result = "{}".format(guess)
+    return jsonify(result)
 
 
 
