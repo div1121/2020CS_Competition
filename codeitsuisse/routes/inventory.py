@@ -29,7 +29,7 @@ def evaluateinventory():
                 count+=1
             else:
                 result.append(r)
-        result.sort(key=lambda tup: (tup[0]))
+        result.sort(key=lambda tup: (tup[0],tup[1]))
         #print(result)
         ab = []
         for i,c in enumerate(result):
