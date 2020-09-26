@@ -17,9 +17,9 @@ def evaluatefruit():
     a = data["maApple"]
     b = data["maWatermelon"]
     c = data["maBanana"]
-    ta = 30
-    tb = 30
-    tc = 30
+    ta = 50
+    tb = 50
+    tc = 50
     print(a)
     print(b)
     print(c)
