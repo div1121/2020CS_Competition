@@ -44,7 +44,7 @@ def findstr(s,realstr):
     n = len(s)
     m = len(realstr)
     dp = [[0] * (n+1) for _ in range (m+1)]
-    print(s,realstr,len(dp))
+    #print(s,realstr,len(dp))
     for i in range(m+1):
         for j in range(n+1):
             #if (i-1>=0 and j-1>=0):
@@ -60,7 +60,7 @@ def findstr(s,realstr):
             #print(i,j,dp[i][j],end=" ")
         #print()
     realans = ""
-    print("Real ans:" , dp[m][n])
+    #print("Real ans:" , dp[m][n])
     i = m
     j = n
     while (i>0 and j>0):
@@ -80,7 +80,7 @@ def findstr(s,realstr):
             else:
                 realans = "+" + s[j-1] + realans
                 j-=1
-    print(i,j)
+    #print(i,j)
     while i>0:
         realans = "-" + realstr[i-1] + realans
         i-=1
