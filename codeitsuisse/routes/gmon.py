@@ -16,9 +16,9 @@ def evaluategmo():
     for c in inputValue:
         c["geneSequence"] = findmaxstr(c["geneSequence"])
     logging.info("My result :{}".format(data))
-    resp = Response(data)
-    resp.headers["Content-Type"] = "application/json"
-    return resp
+    #resp = Response(jsonify(data))
+    #resp.headers["Content-Type"] = "application/json"
+    return Response(json.dumps(data), mimetype='application/json')
 
 def findmaxstr(s):
     a = 0
