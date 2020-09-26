@@ -4,5 +4,6 @@ import codeitsuisse.routes.square
 import codeitsuisse.routes.sort
 import codeitsuisse.routes.secret
 import codeitsuisse.routes.salad
+import codeitsuisse.routes.geometry
 
 
