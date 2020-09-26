@@ -13,8 +13,8 @@ logger = logging.getLogger(__name__)
 def evaluateinventory():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
-    realstr = data.get("searchItemName")
-    itemlist = data.get("items")
+    realstr = data[0].get("searchItemName")
+    itemlist = data[0].get("items")
     print(realstr)
     print(itemlist)
     result = []
