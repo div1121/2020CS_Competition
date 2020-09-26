@@ -17,8 +17,8 @@ def evaluateinventory():
     for tdata in data:
         realstr = tdata.get("searchItemName")
         itemlist = tdata.get("items")
-        print(realstr)
-        print(itemlist)
+        #print(realstr)
+        #print(itemlist)
         result = []
         count = 0
         for s in itemlist:
@@ -29,8 +29,8 @@ def evaluateinventory():
                 count+=1
             else:
                 result.append(r)
-        result.sort(key=lambda tup: (tup[0],tup[1]))
-        print(result)
+        result.sort(key=lambda tup: (tup[0]))
+        #print(result)
         ab = []
         for i,c in enumerate(result):
             if i<10:
@@ -85,10 +85,11 @@ def findstr(s,realstr):
         realans = "-" + realstr[i-1] + realans
         i-=1
 
-    print(dp[m][n],realans)
+    #print(dp[m][n],realans)
     ts = ""
     for c in s:
         if c.isalpha():
             ts += c.lower()
+    #print(type(dp[m][n]))
     return (dp[m][n],ts,realans)
 
