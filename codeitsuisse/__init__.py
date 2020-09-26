@@ -8,3 +8,4 @@ import codeitsuisse.routes.geometry
 import codeitsuisse.routes.inventory
 import codeitsuisse.routes.fruit
 import codeitsuisse.routes.cluster
+import codeitsuisse.routes.socialdistance
