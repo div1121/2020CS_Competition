@@ -30,7 +30,7 @@ def evaluatesocial():
             k = seat - n
             m = people + 1
             ans = ncr(m+k-1,k)
-        save[str(count)] = ans
+        save[x] = ans
         count+=1
     result = {"answers":save}
     logging.info("My result :{}".format(result))
