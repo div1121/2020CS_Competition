@@ -35,6 +35,8 @@ def evaluateinventory():
         for i,c in enumerate(result):
             if i<10:
                 ab.append(c[2])
+            else:
+                break
         fp = {"searchItemName":realstr,"searchResult":ab}
         rrr.append(fp)
     logging.info("My result :{}".format(rrr))
