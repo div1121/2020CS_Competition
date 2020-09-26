@@ -12,21 +12,18 @@ logger = logging.getLogger(__name__)
 def evaluatefruit():
     data = request.get_data()
     print(data)
-    #data = json.loads(data)
+    data = json.loads(data.decode())
     #logging.info("data sent for evaluation {}".format(data))
     #data = ast.literal_eval(data)
-    #a = data["maApple"]
-    #b = data["maWatermelon"]
-    #c = data["maBanana"]
+    a = data["maApple"]
+    b = data["maWatermelon"]
+    c = data["maBanana"]
     ta = 50
     tb = 50
     tc = 50
-    #print(a)
-    #print(b)
-    #print(c)
     #guess = ta*a + tb*b + tc*c
     #logging.info("My result :{}".format(result))
-    guess = 4440
+    guess = 0
     result = "{}".format(guess)
     return jsonify(result)
 
