@@ -2,7 +2,7 @@ import logging
 import json
 import sys
 
-from flask import request, jsonify;
+from flask import request, jsonify,Response;
 
 from codeitsuisse import app;
 
@@ -16,7 +16,9 @@ def evaluategmo():
     for c in inputValue:
         c["geneSequence"] = findmaxstr(c["geneSequence"])
     logging.info("My result :{}".format(data))
-    return json.dumps(data)
+    resp = Response(data)
+    resp.headers["Content-Type"] = "application/json"
+    return resp
 
 def findmaxstr(s):
     a = 0
@@ -32,7 +34,7 @@ def findmaxstr(s):
             g+=1
         if p=="T":
             t+=1
-    print(a,c,g,t)
+    #print(a,c,g,t)
     ans = -sys.maxsize - 1
     te = [0,0,0]
     space = c + g + t
