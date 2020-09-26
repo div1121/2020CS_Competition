@@ -33,7 +33,7 @@ def evaluateinventory():
     for i,c in enumerate(result):
         if i<10:
             ab.append(c[1])
-    fp = [{"searchItemName":realstr,"items":ab}]
+    fp = [{"searchItemName":realstr,"searchResult":ab}]
     logging.info("My result :{}".format(fp))
     return json.dumps(fp)
 
