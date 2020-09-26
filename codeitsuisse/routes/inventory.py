@@ -86,5 +86,9 @@ def findstr(s,realstr):
         i-=1
 
     print(dp[m][n],realans)
-    return (dp[m][n],s,realans)
+    ts = ""
+    for c in s:
+        if c.isalpha():
+            ts += c.lower()
+    return (dp[m][n],ts,realans)
 
