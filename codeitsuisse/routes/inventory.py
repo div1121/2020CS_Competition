@@ -33,6 +33,7 @@ def evaluateinventory():
         #print(result)
         ab = []
         for i,c in enumerate(result):
+            print(c)
             if i<10:
                 ab.append(c[2])
             else:
