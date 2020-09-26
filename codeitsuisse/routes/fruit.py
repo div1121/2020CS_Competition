@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 def evaluatefruit():
     data = request.get_data()
     data = json.loads(data)
-    logging.info("data sent for evaluation {}".format(data))
+    #logging.info("data sent for evaluation {}".format(data))
     #data = ast.literal_eval(data)
     a = data["maApple"]
     b = data["maWatermelon"]
