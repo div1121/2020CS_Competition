@@ -13,29 +13,33 @@ logger = logging.getLogger(__name__)
 def evaluateinventory():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
-    realstr = data[0].get("searchItemName")
-    itemlist = data[0].get("items")
-    print(realstr)
-    print(itemlist)
-    result = []
-    count = 0
-    for s in itemlist:
-        r = findstr(s,realstr)
-        print(r)
-        if count < 10:
-            result.append(r)
-            count+=1
-        else:
-            result.append(r)
-    result.sort()
-    print(result)
-    ab = []
-    for i,c in enumerate(result):
-        if i<10:
-            ab.append(c[1])
-    fp = [{"searchItemName":realstr,"searchResult":ab}]
-    logging.info("My result :{}".format(fp))
-    return json.dumps(fp)
+    rrr = []
+    fp = {}
+    for tdata in data:
+        realstr = data[0].get("searchItemName")
+        itemlist = data[0].get("items")
+        print(realstr)
+        print(itemlist)
+        result = []
+        count = 0
+        for s in itemlist:
+            r = findstr(s,realstr)
+            #print(r)
+            if count < 10:
+                result.append(r)
+                count+=1
+            else:
+                result.append(r)
+        result.sort()
+        print(result)
+        ab = []
+        for i,c in enumerate(result):
+            if i<10:
+                ab.append(c[1])
+        fp = {"searchItemName":realstr,"searchResult":ab}
+    rrr.append(fp)
+    logging.info("My result :{}".format(rrr))
+    return json.dumps(rrr)
 
 def findstr(s,realstr):
     n = len(s)
