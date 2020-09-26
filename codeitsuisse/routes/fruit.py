@@ -23,7 +23,7 @@ def evaluatefruit():
     print(c)
     result = ta*a + tb*b + tc*c
     logging.info("My result :{}".format(result))
-    return str(result)
+    return jsonify(str(result))
 
 
 
