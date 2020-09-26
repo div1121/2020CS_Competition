@@ -24,7 +24,7 @@ def evaluatefruit():
     #print(b)
     #print(c)
     #result = ta*a + tb*b + tc*c
-    logging.info("My result :{}".format(result))
+    #logging.info("My result :{}".format(result))
     return jsonify("0")
 
 
