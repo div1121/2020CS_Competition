@@ -19,7 +19,7 @@ def evaluatefruit():
     #data = ast.literal_eval(data)
     count = 0
     guess = 0
-    save = [i for i in range(1,101)]
+    save = [i for i in range(30,101)]
     random.shuffle(save)
     for i in data:
         guess += save[count] * data[i]
