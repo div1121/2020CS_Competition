@@ -13,11 +13,12 @@ def evaluatefruit():
     data = request.get_data()
     print(data)
     data = json.loads(data.decode())
+    print(data)
     #logging.info("data sent for evaluation {}".format(data))
     #data = ast.literal_eval(data)
-    a = data["maApple"]
-    b = data["maWatermelon"]
-    c = data["maBanana"]
+    #a = data["maApple"]
+    #b = data["maWatermelon"]
+    #c = data["maBanana"]
     ta = 50
     tb = 50
     tc = 50
