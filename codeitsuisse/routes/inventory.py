@@ -34,7 +34,7 @@ def evaluateinventory():
         ab = []
         for i,c in enumerate(result):
             if i<10:
-                ab.append(c[1])
+                ab.append(c[2])
         fp = {"searchItemName":realstr,"searchResult":ab}
         rrr.append(fp)
     logging.info("My result :{}".format(rrr))
@@ -86,5 +86,5 @@ def findstr(s,realstr):
         i-=1
 
     print(dp[m][n],realans)
-    return (dp[m][n],realans)
+    return (dp[m][n],s,realans)
 
