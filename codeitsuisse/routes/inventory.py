@@ -14,10 +14,9 @@ def evaluateinventory():
     data = request.get_json()
     logging.info("data sent for evaluation {}".format(data))
     rrr = []
-    fp = {}
     for tdata in data:
-        realstr = data[0].get("searchItemName")
-        itemlist = data[0].get("items")
+        realstr = tdata.get("searchItemName")
+        itemlist = tdata.get("items")
         print(realstr)
         print(itemlist)
         result = []
@@ -37,7 +36,7 @@ def evaluateinventory():
             if i<10:
                 ab.append(c[1])
         fp = {"searchItemName":realstr,"searchResult":ab}
-    rrr.append(fp)
+        rrr.append(fp)
     logging.info("My result :{}".format(rrr))
     return json.dumps(rrr)
 
