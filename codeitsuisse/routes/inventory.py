@@ -87,7 +87,8 @@ def findstr(s,realstr):
     while i>0:
         realans = "-" + realstr[i-1] + realans
         i-=1
-
+    while j>0:
+        realans = "+" + s[j-1] + realans
     #print(dp[m][n],realans)
     ts = ""
     for c in s:
