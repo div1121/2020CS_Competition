@@ -1,6 +1,7 @@
 import logging
 import json
 import ast
+import random
 
 from flask import request, jsonify;
 
@@ -16,15 +17,14 @@ def evaluatefruit():
     print(data)
     #logging.info("data sent for evaluation {}".format(data))
     #data = ast.literal_eval(data)
-    #a = data["maApple"]
-    #b = data["maWatermelon"]
-    #c = data["maBanana"]
-    ta = 50
-    tb = 50
-    tc = 50
-    #guess = ta*a + tb*b + tc*c
-    #logging.info("My result :{}".format(result))
+    count = 0
     guess = 0
+    save = [i for i in range(1,101)]
+    random.shuffle(save)
+    for i in data:
+        guess += save[count] * data[i]
+        count +=1
+    #logging.info("My result :{}".format(result))
     result = "{}".format(guess)
     return jsonify(result)
 
