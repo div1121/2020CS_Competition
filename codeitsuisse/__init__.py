@@ -10,3 +10,4 @@ import codeitsuisse.routes.fruit
 import codeitsuisse.routes.cluster
 import codeitsuisse.routes.socialdistance
 import codeitsuisse.routes.gmon
+import codeitsuisse.routes.supermarket
