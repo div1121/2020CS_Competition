@@ -7,7 +7,6 @@ logger = logging.getLogger(__name__)
 def default_route():
     return "Python Template";
 
-
 logger = logging.getLogger()
 handler = logging.StreamHandler()
 formatter = logging.Formatter(
@@ -15,8 +14,6 @@ formatter = logging.Formatter(
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.INFO)
-
-
 
 if __name__ == "__main__":
     logging.info("Starting application ...")

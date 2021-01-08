@@ -1,8 +1,8 @@
 import logging
 import json
+import operator as op
 
 from flask import request, jsonify;
-import operator as op
 from functools import reduce
 from codeitsuisse import app;
 
