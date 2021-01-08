@@ -1,4 +1,4 @@
-# 2020 CodeIT Suisse, Hong Kong 2020
+# 2020 CodeIT Suisse, Hong Kong
 
 Coding Competition (Hong Kong Individual)
 
