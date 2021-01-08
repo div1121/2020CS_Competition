@@ -1,8 +1,10 @@
 # 2020 CodeIT Suisse, Hong Kong 2020
 
-Coding Competition (Hong Kong Individual Group)
+Coding Competition (Hong Kong Individual)
 
 Final Result: Place 8th (Total Score: 3090)
+
+![alt text](https://github.com/div1121/Competition/blob/master/Final_Result.png)
 
 # Problem Set of the competition
 
