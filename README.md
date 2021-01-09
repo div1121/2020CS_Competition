@@ -1,20 +1,20 @@
 # 2020 CodeIT Suisse, Hong Kong
 
-Coding Competition (Hong Kong Individual)
+- Coding Competition (Hong Kong Individual)
 
-Final Result: Place 8th (Total Score: 3090)
+- Final Result: Place 8th (Total Score: 3090)
 
 ![alt text](https://github.com/div1121/Competition/blob/master/Final_Result.png)
 
 # Problem Set of the competition
 
-Problem Set can be found in CodeItProblemSet.pdf
+- Problem Set can be found in CodeItProblemSet.pdf
 
 # Deployment
 
-https://cscompetiton.herokuapp.com/
+- https://cscompetiton.herokuapp.com/
 
-The post endpoint is built for passing the testcases in this competition using python
+- The post endpoint is built for passing the testcases in this competition using python
 
 # Desciption
 - Go to file under codeitsuisse/routes folder and there are post methods with name
